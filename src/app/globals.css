@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #111111;
+  --bg-card: #141414;
+  --bg-elevated: #1a1a1a;
+
+  --accent-gold: #d4af37;
+  --accent-gold-dark: #b8960c;
+  --accent-gold-light: #f0d060;
+
+  --color-drop: #e74c3c;
+  --color-positive: #27ae60;
+  --color-text: #f5f5f5;
+  --color-text-muted: #888888;
+  --color-border: #2a2a2a;
+
+  --deal-hot: #e74c3c;
+  --deal-warm: #e67e22;
+  --deal-fair: #888888;
+}
+
+@theme inline {
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-card: var(--bg-card);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-gold: var(--accent-gold);
+  --color-gold-dark: var(--accent-gold-dark);
+  --color-gold-light: var(--accent-gold-light);
+  --color-drop: var(--color-drop);
+  --color-positive: var(--color-positive);
+  --color-text-primary: var(--color-text);
+  --color-text-muted: var(--color-text-muted);
+  --color-border: var(--color-border);
+  --font-heading: "Bebas Neue", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent;
+}
